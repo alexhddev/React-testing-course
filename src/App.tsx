@@ -1,15 +1,11 @@
-import { SimplePost } from "./components/1Simple/SimplePost";
+import UseArrayExample from "./components/2Hooks/UseArrayExample";
 
 function App() {
   
 
   return (
     <>
-     <SimplePost
-      content="The sky is blue"
-      user="Alex"
-      likesBy={['John', 'Mary']}
-     />
+     <UseArrayExample/>
     </>
   )
 }
