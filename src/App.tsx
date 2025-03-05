@@ -1,10 +1,15 @@
+import { SimplePost } from "./components/1Simple/SimplePost";
 
 function App() {
   
 
   return (
     <>
-     <h1>Hello!</h1>
+     <SimplePost
+      content="The sky is blue"
+      user="Alex"
+      likesBy={['John', 'Mary']}
+     />
     </>
   )
 }
