@@ -10,7 +10,7 @@
     "preview": "vite preview",
     "test": "vitest",
     "coverage": "vitest run --coverage",
-    "test-file": "vitest src/components/2Hooks/UseArray.test.tsx"
+    "test-file": "vitest src/components/3UserInteraction/PostWithComments.test.tsx"
   },
   "dependencies": {
     "react": "^19.0.0",
