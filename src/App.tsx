@@ -1,25 +1,13 @@
-import { ShoppingList1 } from "./components/4Errors/ShoppingList1";
-import { ShoppingList2 } from "./components/4Errors/ShoppingList2";
+import { Post } from "./components/5Doubles/2SimpleMocks/Post"
 
 function App() {
 
-  const ingredients = ['Apples', 'Bananas', 'Ham', 'Bread', 'Bread']
-
-  const someFunction = (selectedItem: string) => { 
-    console.log(`Selected ${selectedItem}`)
-  }
-
   return (
     <>
-      <h2>Shopping list 1:</h2>
-      {/* <ShoppingList1
-        groceries={ingredients}
-        selectItem={someFunction}
-      /> */}
-      <h2>Shopping list 2:</h2>
-      <ShoppingList2
-        groceries={ingredients}
-        selectItem={someFunction}
+      <Post
+       content="The sun is bright"
+       id="123"
+       user="Alex"
       />
     </>
   )
