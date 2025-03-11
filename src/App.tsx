@@ -1,13 +1,13 @@
-import { Post } from "./components/5Doubles/2SimpleMocks/Post"
+import { Post } from "./components/5Doubles/4Axios/Post"
 
 function App() {
 
   return (
     <>
       <Post
-       content="The sun is bright"
-       id="123"
-       user="Alex"
+        content="The sun is bright"
+        id="123"
+        user="Alex"
       />
     </>
   )

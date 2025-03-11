@@ -10,9 +10,10 @@
     "preview": "vite preview",
     "test": "vitest",
     "coverage": "vitest run --coverage",
-    "test-file": "vitest /home/alexhd/work/React-testing-course/src/components/5Doubles/3MockSpies/Post.test.tsx"
+    "test-file": "vitest src/components/5Doubles/4Axios/Post.test.tsx"
   },
   "dependencies": {
+    "axios": "^1.8.2",
     "react": "^19.0.0",
     "react-dom": "^19.0.0"
   },
