@@ -1,13 +1,10 @@
-import { Post } from "./components/5Doubles/4Axios/Post"
+import { AppWithRoutes } from "./components/6Router/AppWithRoutes"
 
 function App() {
 
   return (
     <>
-      <Post
-        content="The sun is bright"
-        id="123"
-        user="Alex"
+      <AppWithRoutes
       />
     </>
   )
