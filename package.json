@@ -10,7 +10,7 @@
     "preview": "vite preview",
     "test": "vitest",
     "coverage": "vitest run --coverage",
-    "test-file": "vitest src/components/6Router/RoutesConfig.test.tsx"
+    "test-file": "vitest src/components/7Snapshots/SimplePost.test.tsx"
   },
   "dependencies": {
     "axios": "^1.8.2",
