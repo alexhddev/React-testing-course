@@ -1,3 +1,6 @@
+import { TextEncoder } from 'util'
+global.TextEncoder = TextEncoder
+
 import { createMemoryRouter, RouterProvider } from "react-router";
 import { routesConfig } from "./RoutesConfig";
 import { render, screen } from "@testing-library/react";

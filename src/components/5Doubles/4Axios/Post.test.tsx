@@ -15,6 +15,9 @@ describe('Post tests with mocks', () => {
             content: 'Yes!'
         }
     ]
+    afterEach(()=>{
+        jest.clearAllMocks()
+    })
 
     it('should load received comments', async () => {
         const axiosGetSpy = jest.spyOn(axios, 'get')

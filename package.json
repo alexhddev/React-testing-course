@@ -8,11 +8,10 @@
     "build": "tsc -b && vite build",
     "lint": "eslint .",
     "preview": "vite preview",
-    "test-file": "jest src/components/6Router/AppWithRoutes.test.tsx",
+    "test-file": "jest src/components/5Doubles/4Axios/Post.test.tsx",
     "test": "jest"
   },
   "dependencies": {
-    "@testing-library/user-event": "^14.6.1",
     "axios": "^1.8.3",
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
@@ -21,6 +20,7 @@
   "devDependencies": {
     "@eslint/js": "^9.21.0",
     "@testing-library/jest-dom": "^6.6.3",
+    "@testing-library/user-event": "^14.6.1",
     "@testing-library/react": "^16.2.0",
     "@types/jest": "^29.5.14",
     "@types/node": "^22.13.10",

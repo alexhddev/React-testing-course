@@ -1,7 +1,10 @@
+import { TextEncoder } from 'util'
+global.TextEncoder = TextEncoder
+
 import { Post } from "./Post"
 import { render, screen, within, act } from "@testing-library/react"
-import { HttpResponse, http } from "msw";
-import { setupServer } from "msw/node";
+// import { HttpResponse, http } from "msw";
+// import { setupServer } from "msw/node";
 import { Comment } from "./Model";
 
 // not working with jest
@@ -18,15 +21,15 @@ describe.skip('Post tests with mocks', () => {
         }
     ]
 
-    const server = setupServer(
-        http.get('http://localhost:4000/comments/*', ()=>{
-            return HttpResponse.json(someComments)
-        })
-    )
+    // const server = setupServer(
+    //     // http.get('http://localhost:4000/comments/*', ()=>{
+    //     //     return HttpResponse.json(someComments)
+    //     // })
+    // )
 
-    beforeAll(()=> server.listen())
-    afterAll(()=> server.close())
-    afterAll(()=> server.resetHandlers())
+    // beforeAll(()=> server.listen())
+    // afterAll(()=> server.close())
+    // afterAll(()=> server.resetHandlers())
 
     it('should load received comments', async () => {
 
