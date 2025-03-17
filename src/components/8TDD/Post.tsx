@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
 import { Comment } from "./Model";
-import { getCommentsForPost } from "./DataService";
+import { getCommentsForPost, postComment } from "./DataService";
 
 let nextId = 0;
 
@@ -16,6 +16,7 @@ export function Post(props: {
     useEffect(()=>{
         const fetchComments = async ()=>{
             const comments = await getCommentsForPost(props.id)
+            sortCommentsByDate(comments)
             setComments(comments)
         }
         fetchComments();
@@ -34,9 +35,16 @@ export function Post(props: {
             />
             <button
                 onClick={() => {
+                    const now = new Date().getTime()
                     comments.push({
                         content: comment,
+                        date: now
                     })
+                    postComment(
+                        props.id,
+                        comment,
+                        now
+                    )
                     setComment('')
                 }}
             >Comment</button>
@@ -52,4 +60,9 @@ export function Post(props: {
 
     </div>
 
+}
+
+function sortCommentsByDate(comments: Comment[]){
+    // sort comments by date: newest first
+    comments.sort((a, b) => b.date - a.date)
 }

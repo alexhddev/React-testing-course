@@ -1,3 +1,4 @@
 export type Comment = {
-    content: string
+    content: string,
+    date: number
 }
