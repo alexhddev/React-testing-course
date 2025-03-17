@@ -1,8 +1,9 @@
+import { TextEncoder } from 'util'
+global.TextEncoder = TextEncoder
 import { render, screen } from '@testing-library/react';
-import { TextEncoder } from 'node:util'
 import { AppWithRoutes } from './AppWithRoutes';
 import { MemoryRouter } from 'react-router';
-global.TextEncoder = TextEncoder
+
 
 jest.mock('./Routes/Home', () => ({
     Home: () => <div data-testid='HomeMock' />
