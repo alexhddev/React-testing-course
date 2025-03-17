@@ -50,8 +50,8 @@ describe('UseArray test suites', () => {
     // homework
     describe('UseArray with strings', () => {
         it.todo('should remove elements of array - elements that do not start with UpperCase', () => {
-            const initialArray = ['A', 'B', 'apple', 'Map']
-            const renderResult = renderHook(() => useArray(initialArray))
+            // const initialArray = ['A', 'B', 'apple', 'Map']
+            // const renderResult = renderHook(() => useArray(initialArray))
 
         })
     })
