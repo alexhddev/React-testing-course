@@ -7,7 +7,7 @@ describe('First tests', ()=>{
     expect(true).toBeTruthy()
 
     const heading = screen.getByRole('heading')
-    expect(heading).toBeInTheDocument();
+    expect(heading).not.toBeInTheDocument();
 
   })
 })
