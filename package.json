@@ -8,17 +8,22 @@
     "build": "tsc -b && vite build",
     "lint": "eslint .",
     "preview": "vite preview",
+    "test-file": "jest src/components/6Router/AppWithRoutes.test.tsx",
     "test": "jest"
   },
   "dependencies": {
+    "@testing-library/user-event": "^14.6.1",
+    "axios": "^1.8.3",
     "react": "^19.0.0",
-    "react-dom": "^19.0.0"
+    "react-dom": "^19.0.0",
+    "react-router": "^7.3.0"
   },
   "devDependencies": {
     "@eslint/js": "^9.21.0",
     "@testing-library/jest-dom": "^6.6.3",
     "@testing-library/react": "^16.2.0",
     "@types/jest": "^29.5.14",
+    "@types/node": "^22.13.10",
     "@types/react": "^19.0.10",
     "@types/react-dom": "^19.0.4",
     "@vitejs/plugin-react": "^4.3.4",
@@ -28,6 +33,7 @@
     "globals": "^15.15.0",
     "jest": "^29.7.0",
     "jest-environment-jsdom": "^29.7.0",
+    "msw": "^2.7.3",
     "ts-jest": "^29.2.6",
     "ts-node": "^10.9.2",
     "typescript": "~5.7.2",
